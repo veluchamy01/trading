@@ -3,6 +3,7 @@
  */
 package com.deutschebank.trading.dto;
 
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 /**
@@ -14,6 +15,7 @@ import lombok.Data;
 @Data
 public class SignalDto {
 
-	private int signal;
+	@NotNull(message = "should not be empty")
+	private Integer signal;
 
 }
