@@ -5,6 +5,7 @@ package com.deutschebank.trading.mapper;
 
 import static com.deutschebank.trading.constants.ErrorConstants.ERR_001;
 import static com.deutschebank.trading.constants.SignalConstants.SIGNAL_ONE;
+import static com.deutschebank.trading.constants.SignalConstants.SIGNAL_TWO;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -35,6 +36,7 @@ public class SignalBeanMapper {
 	public SignalBeanMapper() {
 		signalMapper = new HashMap<>();
 		signalMapper.put(1, SIGNAL_ONE);
+		signalMapper.put(2, SIGNAL_TWO);
 	}
 
 	/**

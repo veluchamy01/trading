@@ -21,6 +21,7 @@ public final class SignalConstants {
 	 * supported signal types
 	 */
 	public static final String SIGNAL_ONE = "signalOne";
+	public static final String SIGNAL_TWO = "signalTwo";
 
 	/**
 	 * message constants
