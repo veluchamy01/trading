@@ -22,6 +22,7 @@ public final class SignalConstants {
 	 */
 	public static final String SIGNAL_ONE = "signalOne";
 	public static final String SIGNAL_TWO = "signalTwo";
+	public static final String SIGNAL_THREE = "signalThree";
 
 	/**
 	 * message constants

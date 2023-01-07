@@ -17,21 +17,22 @@ import lombok.extern.slf4j.Slf4j;
  * @author veluchamy.jeganathan
  *
  */
-@Service("signalTwo")
+@Service("signalThree")
 @Slf4j
-public class SignalTwoImpl implements SignalHandler {
+public class SignalThreeImpl implements SignalHandler {
 
 	@Autowired
 	private Algo algo;
 
 	@Override
 	public void handleSignal(int signal) {
-		log.debug("Inside handle signaltwo implementation");
-		algo.reverse();
-		algo.setAlgoParam(1, 80);
+		log.debug("Inside handle signalThree implementation");
+		algo.setAlgoParam(1, 90);
+		algo.setAlgoParam(2, 15);
+		algo.performCalc();
 		algo.submitToMarket();
 		algo.doAlgo();
-		log.debug("Exit handle signaltwo implementation");
+		log.debug("Exit handle signalThree implementation");
 	}
 
 }
